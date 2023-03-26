@@ -3,7 +3,7 @@ const LandingPage = () => {
 
   return (
     <div>
-      Hello World
+      {/* Your code goes here */}
     </div>
   )
 }

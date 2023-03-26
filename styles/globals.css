@@ -47,13 +47,13 @@ a {
 @font-face {
   font-family: "Aeonik";
   src: local("Aeonik"),
-  url("/fonts/AeonikTRIAL-Regular.otf") format("opentype");
+  url("../public/fonts/AeonikTRIAL-Regular.otf") format("opentype");
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Aeonik";
   src: local("Aeonik"),
-  url("/fonts/AeonikTRIAL-Bold.otf") format("opentype");
+  url("../public/fonts/AeonikTRIAL-Bold.otf") format("opentype");
   font-weight: bold;
 }
