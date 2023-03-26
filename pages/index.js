@@ -1,10 +1,9 @@
-import Header from '../src/components/Header';
 
 const LandingPage = () => {
 
   return (
     <div>
-      <Header/>
+      {/* Your code goes here */}
     </div>
   )
 }
