@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import {styled} from "@mui/material/styles";
 import theme from "../../src/theme";
+import Link from "next/link";
 
 const MarginedFooter = styled('footer')({
     marginTop: '10em',
@@ -65,7 +66,11 @@ const Footer = () => {
                 </LeftGridItem>
                 <Grid item xs={4}>
                     <PurpleTypography>Get the app</PurpleTypography>
-                    <Image src='/images/AppStoreBadgeDark.svg' alt='App Store Badge Dark' height={40} width={121}/>
+                    <Link href="https://apps.apple.com/us/app/platstack-stack-it-forward/id1535896375">
+                        <a>
+                            <Image src='/images/AppStoreBadgeDark.svg' alt='App Store Badge Dark' height={40} width={121}/>
+                        </a>
+                    </Link>
                     <MarginedTypography>(coming soon to Android!)</MarginedTypography>
                 </Grid>
             </Grid>

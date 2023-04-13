@@ -13,6 +13,33 @@ import NoBanner from "./components/NoBanner";
 import SocialProof from "./components/SocialProof";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import {styled} from "@mui/material/styles";
+
+const HomeContainer = styled(Box)({
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '0px',
+      width: '1440px',
+      height: 'fit-content',
+      background: '#FFFFFF',
+});
+
+const HeroSection = styled(Box)({
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      padding: '96px 0px 0px',
+      gap: '64px',
+      width: '1440px',
+      height: '11611px',
+      flex: 'none',
+      order: 1,
+      alignSelf: 'stretch',
+      flexGrow: 0,
+      zIndex: 0,
+});
+
 const LandingPage = () => {
       const [activeComponent, setActiveComponent] = useState(0)
 
@@ -37,23 +64,24 @@ const LandingPage = () => {
       }, []);
 
   return (
-    <Container>
+    <HomeContainer>
           <Navbar/>
-          <Box id={'Hero-Section'} sx={{textAlign: 'center', mt: '15em'}}>
+          <HeroSection>
                 <HeadContent/>
                 <Mock/>
-                {activeComponent === 0 && <SearchBanner/>}
-                {activeComponent === 1 && <SaveBanner/>}
-                {activeComponent === 2 && <ShareBanner/>}
-                {activeComponent === 3 && <NoBanner/>}
-                <Search/>
-                <Save/>
-                <Share/>
-                <SocialProof/>
-                <CTA/>
-                <Footer/>
-          </Box>
-    </Container>
+                <SearchBanner/>
+                {/*{activeComponent === 0 && <SearchBanner/>}*/}
+                {/*{activeComponent === 1 && <SaveBanner/>}*/}
+                {/*{activeComponent === 2 && <ShareBanner/>}*/}
+                {/*{activeComponent === 3 && <NoBanner/>}*/}
+                {/*<Search/>*/}
+                {/*<Save/>*/}
+                {/*<Share/>*/}
+                {/*<SocialProof/>*/}
+                {/*<CTA/>*/}
+                {/*<Footer/>*/}
+          </HeroSection>
+    </HomeContainer>
   )
 }
 

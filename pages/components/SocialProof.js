@@ -84,7 +84,7 @@ const CleoBubble = styled(Box)({
 });
 
 const Bubbles = styled(Box)({
-    overflowX: 'hidden',
+    overflowX: 'scroll',
 });
 
 const StyledTypography = styled(Typography)({
